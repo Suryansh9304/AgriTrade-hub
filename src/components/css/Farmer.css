@@ -1,0 +1,99 @@
+/* Farmer.css */
+.dashboard-gradient {
+    background: linear-gradient( to right,rgba(16, 186, 149, 0.4),rgba(140, 190, 54, 0.4)),
+    url("../../assets/images/Agri.jpg") center/cover no-repeat;    color: white;   
+    min-height: 100vh;
+    padding: 30px;
+  }
+  
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  /* Sidebar Gradient */
+.sidebar-gradient {
+    background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Main content area */
+  .main-content {
+    background-color: #f8f9fa; /* Light background similar to bg-light */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .sidebar-gradient .list-group-item {
+    background: transparent; /* Remove solid color so gradient shows */
+    border: none;
+  }
+  
+  .sidebar-gradient .btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border: none;
+  }
+  
+  .sidebar-gradient .btn:hover {
+    background-color: white;
+  }
+  /* Tasks page styling */
+.tasks-page {
+  background: linear-gradient( to right,rgba(16, 186, 149, 0.4),rgba(140, 190, 54, 0.4)),
+  url("../../assets/images/Agri.jpg") center/cover no-repeat;    color: white;    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .tasks-table thead {
+    background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+    color: white;
+  }
+  
+  .tasks-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .contact-admin-card {
+    background: linear-gradient( to right,rgba(16, 186, 149, 0.4),rgba(140, 190, 54, 0.4)),
+    url("../../assets/images/Agri.jpg") center/cover no-repeat;    color: white;
+    border-radius: 30px;
+    padding: 50px;
+  }
+  
+  .contact-admin-card .form-label {
+    color: white; /* So labels are readable */
+  }
+  
+  .contact-admin-card .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .contact-admin-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .notifications-card {
+    background: linear-gradient( to right,rgba(16, 186, 149, 0.4),rgba(140, 190, 54, 0.4));   color: white;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .notifications-card .list-group-item {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: rgb(1, 57, 21);
+    border: none;
+  }
+  
+  .notifications-card .badge {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .farmer-page {
+    min-height: 100vh;
+    background: linear-gradient( to right,rgba(16, 186, 149, 0.4),rgba(140, 190, 54, 0.4)),
+      url("../../assets/images/Agri.jpg") center/cover no-repeat;
+  }
+  

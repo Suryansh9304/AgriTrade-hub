@@ -1,0 +1,90 @@
+/* Dashboard Background */
+.dashboard-gradient {
+  background: linear-gradient(to right, rgba(16, 186, 149, 0.4), rgba(140, 190, 54, 0.4)),
+    url("../../assets/images/Agri.jpg") center/cover no-repeat;
+  color: white;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Sidebar Gradient - Fixed Position */
+.sidebar-gradient {
+  background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+  color: white;
+  position: fixed; /* stays in place */
+  top: 0;
+  left: 0;
+  width: 250px; /* fixed width */
+  height: 100vh; /* full height */
+  overflow-y: auto; /* scroll if content is tall */
+  padding: 1rem;
+  z-index: 1000; /* keep it above other elements */
+}
+
+/* Main content area - pushed right */
+.main-content {
+  margin-left: 250px; /* same as sidebar width */
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Sidebar List Items */
+.sidebar-gradient .list-group-item {
+  background: transparent;
+  border: none;
+}
+
+.sidebar-gradient .btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border: none;
+}
+
+.sidebar-gradient .btn:hover {
+  background-color: white;
+}
+
+/* Merchant Page Background */
+.merchant-page {
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(16, 186, 149, 0.4), rgba(140, 190, 54, 0.4)),
+    url("../../assets/images/Agri.jpg") center/cover no-repeat;
+}
+
+/* Orders Table */
+.orders-table thead {
+  background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+  color: white;
+}
+
+.orders-table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Inventory Card */
+.inventory-card {
+  background: linear-gradient(to right, rgba(16, 186, 149, 0.4), rgba(140, 190, 54, 0.4));
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Merchant Stats Card */
+.merchant-stats-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}

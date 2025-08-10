@@ -1,0 +1,166 @@
+ 
+ html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.position{
+  position : fixed;
+  /* top : 0; */
+left: 0;
+width : 100%;
+z-index:100;
+}
+
+ .custom-navbar {
+  /* background-color: rgb(91, 156, 20) !important;  */
+  background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+}
+.nav-item:hover{
+  transform: translateY(-5px);
+}
+
+.card{
+  background: linear-gradient(to right, rgba(253, 200, 96, 0.897), rgb(224, 191, 148));
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.custom-footer{
+   background:linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+}
+
+ .custom-navbar .nav-link {
+  color: #ffffff !important; /* White link text */
+} 
+
+  .custom-navbar .nav-link:hover {
+   color: #fafaf8 !important; /*Highlight on hover */
+}
+
+ .custom-navbar .navbar-brand {
+  color: #ffffff !important; /* Brand/logo text */
+} 
+
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 12px 20px;
+  color: white;
+  position: relative;
+  background-color: rgb(91, 156, 20); 
+}
+
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text see-through */
+  background-clip: text; /* Standard property */
+}
+.gradient-text:hover{
+   transform: translateY(-5px);
+}
+.custom-green-btn {
+  /* background-color: rgb(53, 96, 7); */
+  background:linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54));
+  color: white;
+  border: none;
+}
+
+/* .custom-green-btn{
+  hovrgb(91, 156, 20);
+} */
+
+.custom-outline-green-btn {
+  border: 2px solid rgb(25, 48, 1);
+  color: rgb(25, 48, 1);;
+  background-color: transparent;
+}
+
+.custom-outline-green-btn:hover {
+  background-color: rgb(25, 48, 1);;
+}
+
+.custom-green-bg {
+  background-color: rgb(91, 156, 20);
+}
+
+/*  */
+.custom-green-btn {
+  background-color: rgba(56, 109, 0, 0.8);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Darker shade on hover */
+.custom-green-btn:hover {
+  background-color: rgba(76, 150, 5, 0.9); /* Darker green */
+  color: white;
+}
+
+/* Outline green button */
+.custom-outline-green-btn {
+  border: 2px solid rgba(106, 200, 5, 0.8);
+  color: rgba(106, 200, 5, 0.8);
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* On hover: light green background, white text */
+.custom-outline-green-btn:hover {
+  background-color: rgba(106, 200, 5, 0.15);
+  color: rgba(76, 150, 5, 1);
+}
+
+/* Full green background sections */
+.custom-green-bg {
+  background-color: rgba(106, 200, 5, 0.8);
+}
+
+.about-us-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+}
+
+
+.block{
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(16, 16, 16, 0.63);
+}
+
+.blockquote {
+  background-color: #e8f5e9;
+  border-left: 5px solid #4caf50;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+
+/* marquee */
+.marquee-container {
+  width: 100%;
+  /* background: linear-gradient(to right, rgb(16, 186, 149), rgb(140, 190, 54)); */
+  /* color: white; */
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: marquee 5s linear infinite alternate;
+  padding-left: 100%;
+}
+
