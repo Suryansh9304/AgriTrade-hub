@@ -52,7 +52,7 @@ function Register() {
                             </div>
 
                             {/* Common Fields */}
-
+                            
                             {/* Role-Specific Form */}
                             {renderUserForm()}
 
