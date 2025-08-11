@@ -1,0 +1,24 @@
+.dashboard-gradient {
+    background: linear-gradient( to right,rgba(16, 186, 149, 0.4),rgba(140, 190, 54, 0.4)),
+    url("../../assets/images/Agri.jpg") center/cover no-repeat;    color: white;   
+    min-height: 100vh;
+    padding: 30px;
+  }
+  .sidebar-nav {
+    background-color: rgb(108, 171, 36);
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 100%;
+    color: white;
+  }
+  
+  .sidebar-nav .nav-link {
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .sidebar-nav .nav-link.active {
+    background-color: #0e4510; /* Green for active tab */
+    color: white;
+  }
