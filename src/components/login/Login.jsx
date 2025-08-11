@@ -68,8 +68,12 @@ function Login() {
                                 <option value="admin">Admin</option>
                             </select>
                         </div>
-
                         <button type="submit" className="btn btn-success w-100">Login</button>
+
+                          <button
+                          type="button"
+                          className="btn btn-success w-100 mt-3"
+                          onClick={() => navigate("/register")}>Register</button>
                     </form>
                 </div>
             </div>
