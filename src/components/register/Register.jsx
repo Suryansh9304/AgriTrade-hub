@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/Farmer.css";
+import FarmerRegistration from "./FarmerRegistration";
+import MerchantRegistration from "./MerchantRegistration";
+import AdminRegistration from "./AdminRegistration";
 
 function Register() {
     const navigate = useNavigate();
@@ -8,8 +11,6 @@ function Register() {
 
     const handleRegister = (e) => {
         e.preventDefault();
-
-
         if (userType === "farmer") {
             navigate("/farmer-dashboard");
         } else if (userType === "merchant") {
@@ -21,6 +22,13 @@ function Register() {
         }
     };
 
+    const renderUserForm = () => {
+        if (userType === "farmer") return <FarmerRegistration />;
+        if (userType === "merchant") return <MerchantRegistration />;
+        if (userType === "admin") return <AdminRegistration />;
+        return null;
+    };
+
     return (
         <React.Fragment>
             <div className="farmer-page">
@@ -28,31 +36,6 @@ function Register() {
                     <div className="col-md-6 bg-white p-4 shadow rounded">
                         <h2 className="text-center text-success mb-4">AgriTrade Hub Registration</h2>
                         <form onSubmit={handleRegister}>
-                            <div className="mb-3">
-                                <label className="form-label">Name</label>
-                                <input type="text" className="form-control" required />
-                            </div>
-
-                            <div className="mb-3">
-                                <label className="form-label">Email</label>
-                                <input type="email" className="form-control" required />
-                            </div>
-
-                            <div className="mb-3">
-                                <label className="form-label">Phone Number</label>
-                                <input type="tel" className="form-control" pattern="[0-9]{10}" required />
-                            </div>
-
-                            <div className="mb-3">
-                                <label className="form-label">Age</label>
-                                <input type="number" className="form-control" min="18" required />
-                            </div>
-
-                            <div className="mb-3">
-                                <label className="form-label">Verification Code</label>
-                                <input type="text" className="form-control" required />
-                            </div>
-
                             <div className="mb-4">
                                 <label className="form-label">User Type</label>
                                 <select
@@ -68,7 +51,12 @@ function Register() {
                                 </select>
                             </div>
 
-                            <button type="submit" className="btn btn-success w-100">Register</button>
+                            {/* Common Fields */}
+
+                            {/* Role-Specific Form */}
+                            {renderUserForm()}
+
+                            <button type="submit" className="btn btn-success w-100 mt-3">Register</button>
                         </form>
                     </div>
                 </div>

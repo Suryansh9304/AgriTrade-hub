@@ -13,7 +13,6 @@ const PaymentsOverview = () => {
   const [filter, setFilter] = useState("All");
 
   useEffect(() => {
-    // replace with API
     setPayments(mockPayments);
   }, []);
 

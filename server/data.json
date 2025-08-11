@@ -1,0 +1,17 @@
+{
+  "roles": [
+    {
+      "id": "51c8",
+      "name": "farmer"
+    },
+    {
+      "id": "84f9",
+      "name": "admin"
+    },
+    {
+      "id": "5917",
+      "name": "merchant"
+    }
+  ],
+  "users": []
+}
