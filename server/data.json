@@ -13,5 +13,22 @@
       "name": "merchant"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": "de93",
+      "name": "Suryansh Singh",
+      "email": "jaiho@gmail.com",
+      "mobile": "9528487817",
+      "password": "1234",
+      "role": "farmer"
+    },
+    {
+      "id": "ba05",
+      "name": "tushar dixit",
+      "email": "admin@gmail.com",
+      "mobile": "9528487817",
+      "password": "1234",
+      "role": "merchant"
+    }
+  ]
 }

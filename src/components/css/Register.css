@@ -1,0 +1,13 @@
+.register-background {
+  background: ilinear-gradient(to right, rgba(16, 186, 149, 0.4), rgba(140, 190, 54, 0.4)),
+  url("../../assets/images/Agri.jpg") center/cover no-repeat;
+}
+.register-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .register-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
